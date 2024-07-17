@@ -1,8 +1,10 @@
 import express from "express"
 import { allTask, deleteTask, myTask, newTask, updateTask } from "../controllers/task.js"
+import { homePage } from "../controllers/user.js"
 
 const router = express.Router()
 
+router.get('/',homePage)
 
 router.post('/new', newTask)
 

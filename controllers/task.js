@@ -3,6 +3,11 @@ import { User } from "../models/user.js"
 import jwt from "jsonwebtoken"
 
 
+export const homePage=(req,res)=>{
+    res.send("Hey there , I am live....")
+}
+
+
 export const newTask = async (req, res) => {
 
     const { token } = req.cookies
